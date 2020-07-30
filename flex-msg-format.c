@@ -26,7 +26,7 @@ typedef struct
 
 int main( int argc, char * argv[])
 {
-    genericMsg_t temp1 = {                              "Temp msg",
+	genericMsg_t temp1 = {                              "Temp msg",
 	                                                             2,
 	                        { { FLOAT, .floatVar=4.5f,    "Temp" },
 	                          {   INT,     .intVar=10, "Samples" } }
@@ -39,7 +39,7 @@ int main( int argc, char * argv[])
 	                          { FLOAT, .floatVar=124.8724f, "Long" },
 	                          {  CHAR,        .charVar='E',  "E/W" } }
 	                    };
-
+	
 	genericMsg_t messages[NUM_MESSAGES] = { temp1, loc1 };
 
 	for(int msg_idx = 0; msg_idx < NUM_MESSAGES; msg_idx++)
